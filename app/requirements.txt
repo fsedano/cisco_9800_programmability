@@ -1,0 +1,9 @@
+ncclient
+netconf-console
+requests
+xmltodict
+pexpect
+dictdiffer
+texttable
+lxml
+netaddr
