@@ -1,7 +1,7 @@
 """
-This file implements the wirelesscontroller class.
+This file implements the C9800 class.
 
-Three method are available:
+Three methods are available:
 
 -----
 set_ap_tag(ap_mac, ap_tag)
