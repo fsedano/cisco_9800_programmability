@@ -1,6 +1,6 @@
 import logging
 from readinventory import Inventory
-from c9800 import C9800
+from c9800.c9800 import C9800
 import argparse
 
 ## Set logging level and format

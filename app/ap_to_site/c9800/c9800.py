@@ -62,6 +62,8 @@ class C9800:
             response.raise_for_status()
         except HTTPError as http_err:
             logging.error(f'HTTP error occurred: {http_err}')
+        except requests.exceptions.ConnectionError as e:
+            logging.error(f"Connection error: {e}")
         except Exception as err:
             logging.exception(f'Other error occurred: {err}')
         else:
@@ -115,6 +117,8 @@ class C9800:
                     "MAC":str(MAC)
                 }
         except ValueError as err:
+            logging.info(f"No data was returned")
+        except AttributeError as err:
             logging.info(f"No data was returned")
         except Exception as err:
             logging.exception(f"Other error: {err}")
